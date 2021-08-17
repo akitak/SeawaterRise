@@ -42,7 +42,7 @@ if page == 'Make a prediction!':
     #For this portion I took help from project 4's streamlit app
     click = st.button('Predict')
     if click:
-        with open('Ada_Boosting_model.pkl', mode = 'rb') as pickle_in:
+        with open('Random_Foresr_model.pkl', mode = 'rb') as pickle_in:
             pipe = pickle.load(pickle_in)
             input_val = [LONGITUDE, ELEVATION,TMIN, TMAX,PRCP,TAVG]
             input_val = np.reshape(input_val,(1,-1))
