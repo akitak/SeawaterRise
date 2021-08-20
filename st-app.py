@@ -17,7 +17,14 @@ if page == 'About':
     st.write(" Add something here")
 
 if page == 'More research':
-    st.write(" Add outside research here, Eddie can help u in this.")
+    st.write("Sea level rise poses a huge threat to coastal habitats: Almost 40% of the U.S. Population lives in high-population density coastal areas where sea level can unleash devastating effects. Sea level is a major part when it comes to flooding, shoreline erosion, and storm surges. Increase in either of these can result in infrastructure damage: roads, bridges, subways, water supply, oil and gas wells, pwer plants, sewage treatment plants, and landfills.")
+    st.image('https://www.coastalhazardwheel.org/media/1310/noaa-katrina-new-orleans-flooding3-2005-test2.jpg', caption = 'Coastal flooding devasataion.')
+
+    st.write("Rate of sea level rise has been accelerating: For most of the twntieth century, the rate of sea level rise was around 0.06 inches (1.4 millimeters). It has since more than doubled to a rate of 0.14 inches (3.6 millimeters) a year from 2006 - 2015. The cause? Global warming, or more specifically, the ice and glacier melt caused by rising global mean temperature as well as the ocean volume due to the temperature of water rising. The increase in fossil fuel emissions, deforestation, and agriculture farming. ")
+    st.image('https://cdn.britannica.com/67/106467-050-1EF12FB5/concentration-carbon-dioxide-atmosphere-greenhouse-gases-Earth-1750.jpg', caption = 'Greenhouse gas radiative forcings')
+
+    
+    
 
 if page == 'Make a prediction!':
     features = ['LONGITUDE', 'ELEVATION','TMIN', 'TMAX','PRCP','TAVG']
