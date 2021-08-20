@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-
+from PIL import Image
 
 st.title('Predicting rise in sea level in Alaska')
 
@@ -11,7 +11,28 @@ page = st.sidebar.selectbox(
 )
 
 if page == 'Home':
-    st.write(" Add more here")
+
+    image = Image.open('st_images/Alaskan Coastline.jpg')
+    st.image(image)
+
+    st.write(
+    "As the effects of Global Warming increase, there is growing"+
+    " concern regarding what impact rising sea levels will have on society." +
+    " It is our team's mission to predict sea levels based on seemingly" +
+    " unrelated metrics in order to more easily monitor rising sea levels."+
+    " In order to do so we will process data gathered by a range of instituations"+
+    " through a comprehensive collection of advanced machine learning techniques."
+    " It is through this process that we hope to draw incites, make conclusions"+
+    " and provide recommendations for those realms which are being effected. ")
+
+    st.write("                                                                 "+
+    "                                                                 " +
+    "                                                                 "
+    "                                                                 "
+    )
+    st.title('Meet Our Team')
+    image2 = Image.open('st_images/team.png')
+    st.image(image2)
 
 if page == 'About':
     st.write(" Add something here")
@@ -23,8 +44,8 @@ if page == 'More research':
     st.write("Rate of sea level rise has been accelerating: For most of the twntieth century, the rate of sea level rise was around 0.06 inches (1.4 millimeters). It has since more than doubled to a rate of 0.14 inches (3.6 millimeters) a year from 2006 - 2015. The cause? Global warming, or more specifically, the ice and glacier melt caused by rising global mean temperature as well as the ocean volume due to the temperature of water rising. The increase in fossil fuel emissions, deforestation, and agriculture farming. ")
     st.image('https://cdn.britannica.com/67/106467-050-1EF12FB5/concentration-carbon-dioxide-atmosphere-greenhouse-gases-Earth-1750.jpg', caption = 'Greenhouse gas radiative forcings')
 
-    
-    
+
+
 
 if page == 'Make a prediction!':
     features = ['LONGITUDE', 'ELEVATION','TMIN', 'TMAX','PRCP','TAVG']
