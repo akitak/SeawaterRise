@@ -35,6 +35,10 @@ We collected data for individual weather stations scattered across Alaska, as we
 
 - **Clean_dataframe folder**
     - **clean_df.csv :** The final dataframe resulting from data cleaning that we performed
+- **data dictionaries**
+    - **noaa_co2.md :** Simple reference guide for the Carbon Dioxide data from NOAA
+    - **noaa_daily_summ.md:** Reference guide for daily summaries obtained from NOAA
+    - **univ_hawaii_sealevel.md:** Reference guide for University of Hawaii sea level dataset
 - **data folder**
     - **site folder:** The sea level data for each weather station (from University of Hawaii)
     - **station_points.csv:** The coordinates of each weather station (pulled from NOAA for Tableau app)
